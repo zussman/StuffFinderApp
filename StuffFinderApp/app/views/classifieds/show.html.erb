@@ -1,0 +1,13 @@
+<p>
+  <strong>Title:</strong>
+  <%= @classified.title %> - <%= number_to_currency(@classified.price) %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @classified.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_classified_path(@classified) %> | 
+<%= link_to 'Back', classifieds_path %>
