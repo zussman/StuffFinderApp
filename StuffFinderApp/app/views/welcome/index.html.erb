@@ -8,6 +8,6 @@
 
 <div>
   <h1>Your place for finding stuff you want, and dumping stuff you don't</h1>
-  <button>Create a new classified!</button>
-  <button>See our current classifieds</button>
+  <button><%= link_to 'Create a new classified!', new_classified_path(@classified) %></button>
+  <button><%= link_to 'See our current classifieds', classifieds_path %></button>
 </div>
